@@ -9,7 +9,7 @@ function App() {
     questions,
     index,
     correct,
-    nextQuestions,
+    nextQuestion,
     checkAnswers,
   } = useGlobalContext();
   if (waiting) {
@@ -51,7 +51,7 @@ function App() {
             })}
           </div>
         </article>
-        <button className="next-question" onClick={nextQuestions}>
+        <button className="next-question" onClick={nextQuestion}>
           next questions
         </button>
       </section>
